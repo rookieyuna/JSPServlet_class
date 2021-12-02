@@ -18,7 +18,7 @@
 	</div>
 	<p>
 		오류명 : <%= exception.getClass().getName() %> <br>
-		오류메세지 : <%= exception.getMessage() %> 
+		오류메세지 : <%= exception.getMessage() %>
 	</p>
-</body>
+</body> 
 </html>
