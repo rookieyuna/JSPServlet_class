@@ -39,7 +39,12 @@
 	<%
 	//
 	DBConnPool pool = new DBConnPool();
-	pool.close();
+	/*
+	커넥션풀은 톰캣이 미리 만들어둔 커넥션 객체를 재사용하는 개념이므로
+	사용 후 반납(close();)하지 않으면 객체가 부족하여 사용할 수 없는 
+	상태가 될 수 있다.	※ 주의 요망!
+	*/
+	//pool.close();
 	%>
 </body>
 </html>
