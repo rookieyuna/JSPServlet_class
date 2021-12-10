@@ -50,7 +50,7 @@
 			<c:set var="sum" value="${sum+j }"/>
 		</c:if>
 	</c:forEach>
-	1~100사이의 정수 중 홀수의 합은? ${sum }
+	1~100사이의 정수 중 홀수의 합은? ${sum }<br>
 	
 	
 	<h4>연습문제01 : forEach태그</h4>

@@ -18,7 +18,7 @@
 	 -->
 	<h4>향상된 for문 형태의 forEach태그</h4>
 	<%
-	String[] rgba = {"Red", "Green", "Blue", "Black"};
+	String[] rgba = {"Red", "Green", "Blue", "Alpha"};
 	%>
 	
 	<c:forEach items="<%= rgba %>" var="c">
