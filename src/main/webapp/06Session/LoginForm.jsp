@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Session</title>
 </head>
 <body>
 	<jsp:include page="../Common/Link.jsp"/>
