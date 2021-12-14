@@ -10,7 +10,7 @@
 //파일이 저장될 디렉토리의 물리적 경로 얻어오기
 String saveDirectory = application.getRealPath("/Uploads");
 //업로드할 파일의 최대용량 설정(만약 파일이 2개라면 둘이 합친용량으로 설정!)
-int maxPostSize = 1024 * 1000;
+int maxPostSize = 1024 * 1000; // =1GB
 //인코딩 방식 설정
 String encoding = "UTF-8";
 
@@ -36,7 +36,7 @@ try{
 	//파일명과 확장자를 합쳐 저장할 파일명 생성
 	String newFileName = now + ext;
 	
-	//기존의 파일명을 새로운 파일명으로 변경(File.separator - 경로구분기호)
+	//기존의 파일명을 새로운 파일명으로 변경(File.separator - 경로구분기호(/혹은 \))
 	File oldFile = new File(saveDirectory + File.separator + fileName);
 	File newFile = new File(saveDirectory + File.separator + newFileName);
 	oldFile.renameTo(newFile);
@@ -79,13 +79,3 @@ catch(Exception e){
 	request.getRequestDispatcher("FileUploadMain.jsp").forward(request, response);
 }
 %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
