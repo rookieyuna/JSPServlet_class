@@ -35,7 +35,7 @@ $(document).ready(function(){
 				//계산된 가격을 다신 hidden태그에 적용
 				$('#totalPrice').val(totalPrice);
 				//웹브라우저에 총 금액을 출력한다
-				$('#priceDisplay').html("총상품금액:"+totalPrice);
+				$('#priceDisplay').html("총상품금액 : "+totalPrice);
 				
 				//콜백된 데이터를 통해 옵션테이블을 생성
 				var table=''
@@ -125,7 +125,7 @@ function imgChange(imgSrc) {
    		 </form> 
    		 <!-- 선택한 옵션상품이 디스플레이 되는 곳 -->  		 
    		 <div class="row" id="goodsList"></div>  
-   		 <!-- 상품의 합게 가격 -->		 
+   		 <!-- 상품의 합계 가격 -->		 
    		 <div class="row" id="priceDisplay"
    			 style="font-size:1.5em; color:red;">
    			 총상품금액 : 70,000원
