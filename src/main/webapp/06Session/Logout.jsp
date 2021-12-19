@@ -5,8 +5,5 @@
 session.removeAttribute("UserId");
 session.removeAttribute("UserName");
 
-//로그아웃 방법2 : 전체속성 삭제
-session.invalidate();
-
 response.sendRedirect("LoginForm.jsp");
 %>
